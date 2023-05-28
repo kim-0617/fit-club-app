@@ -1,4 +1,3 @@
-import { ReactComponentElement } from "react";
 import { ReactComponent as Data01 } from "../svg/programdata1.svg";
 import { ReactComponent as Data02 } from "../svg/programdata2.svg";
 import { ReactComponent as Data03 } from "../svg/programdata3.svg";

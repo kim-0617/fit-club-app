@@ -27,9 +27,11 @@ const Join = () => {
         .then(
           (result) => {
             alert("전송성공");
+            console.log(result);
           },
           (error) => {
-            alert("전송실패" + error);
+            alert("전송실패");
+            console.log(error);
           }
         )
         .finally(() => {
