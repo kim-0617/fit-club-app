@@ -1,0 +1,124 @@
+.test {
+  display: flex;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.left__t {
+  display: flex;
+  flex: 1 1;
+  gap: 2rem;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.left__t > :nth-child(1) {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.left__t > :nth-child(2),
+.left__t > :nth-child(3) {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.left__t > :nth-child(4) {
+  text-transform: none;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.left__t .name {
+  color: var(--orange);
+}
+
+.right__t {
+  flex: 1;
+  position: relative;
+}
+
+.right__t > img {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+  right: 8rem;
+  top: 2rem;
+}
+
+.right__t > :nth-child(1) {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  border: 2px solid orange;
+  background-color: transparent;
+  right: 9rem;
+  top: 0.9rem;
+}
+
+.right__t > :nth-child(2) {
+  position: absolute;
+  width: 17rem;
+  height: 19rem;
+  right: 7rem;
+  top: 4rem;
+  background: var(--planCard);
+}
+
+.arrows {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+}
+
+.arrows > img {
+  width: 1.5rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .test {
+    flex-direction: column;
+  }
+
+  .left__t > :nth-child(2),
+  .left__t > :nth-child(3) {
+    font-size: xx-large;
+  }
+
+  .right__t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .right__t > div {
+    position: relative;
+    display: none;
+  }
+
+  .right__t > img {
+    top: 0;
+    right: 0;
+    position: relative;
+    align-self: center;
+  }
+
+  .right__t > :last-child {
+    display: block;
+    left: 0;
+    bottom: 0;
+  }
+
+  .right__t > :last-child > img:first-child {
+    margin-right: 1rem;
+  }
+}

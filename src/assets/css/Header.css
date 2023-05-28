@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 10rem;
+  height: 3rem;
+}
+
+.header__menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: #fff;
+}
+
+.header__menu > li {
+  cursor: pointer;
+}
+
+.header__menu > li:hover {
+  color: var(--orange);
+}
+
+.hamberger__icon {
+  background: var(--appColor);
+  padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 5px;
+}
+
+.hamberger__icon > img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header > :nth-child(2) {
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 99;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    background-color: var(--appColor);
+    padding: 2rem;
+  }
+}
